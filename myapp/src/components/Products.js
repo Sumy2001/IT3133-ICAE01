@@ -15,7 +15,7 @@ export default function Products(){
             setCartItems([...cartItems, {...flower, qty: quantity}]);
         }
     };
-    
+
     return(
         <>
             <div className="item1">
@@ -26,6 +26,9 @@ export default function Products(){
                 <div className="grid-container">
                     {
                         //product
+                        flowers.map(flower=> (
+                            <product key={flower.id} flower={flower} addToCart={addToCart}/>
+                        ))
                     }
                 </div>
 
@@ -33,6 +36,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
+                <Cart cartItems={}
                 }
             </div>
         </>
