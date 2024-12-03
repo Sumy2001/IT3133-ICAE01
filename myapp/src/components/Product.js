@@ -1,5 +1,11 @@
 import '../assets/CSS/layout.css';
-export default function Product(){
+import {useState} from 'react';
+
+export default function Product({flower, addToCart}) {
+
+    const[quantity, setQuantity]=useState(0);
+
+    
     
     return(
         <div className="grid-item">
