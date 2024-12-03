@@ -2,7 +2,7 @@ import '../assets/CSS/layout.css';
 import {useState} from 'react';
 import {flowers} from './FlowerDB';
 import Product from './Product';
-
+import Cart from './Cart';
 
 export default function Products(){
     const[cartItems, setCartItems]=useState([]);
