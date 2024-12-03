@@ -1,6 +1,5 @@
-
 import '../assets/CSS/layout.css';
-
+import {useState} from 'react';
 
 export default function Products(){
    
