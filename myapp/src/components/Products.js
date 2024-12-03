@@ -1,5 +1,6 @@
 import '../assets/CSS/layout.css';
 import {useState} from 'react';
+import {flowers} from './FlowerDB';
 
 export default function Products(){
     const[cartItems, setCartItems]=useState([]);
