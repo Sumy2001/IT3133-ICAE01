@@ -2,6 +2,7 @@ import '../assets/CSS/layout.css';
 import {useState} from 'react';
 
 export default function Products(){
+    const[cartItems, setCartItems]=useState([]);
    
     return(
         <>
