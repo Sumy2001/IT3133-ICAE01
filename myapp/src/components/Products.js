@@ -1,6 +1,8 @@
 import '../assets/CSS/layout.css';
 import {useState} from 'react';
 import {flowers} from './FlowerDB';
+import Product from './Product';
+
 
 export default function Products(){
     const[cartItems, setCartItems]=useState([]);
@@ -27,7 +29,7 @@ export default function Products(){
                     {
                         //product
                         flowers.map(flower=> (
-                            <product key={flower.id} flower={flower} addToCart={addToCart}/>
+                            <Product key={flower.id} flower={flower} addToCart={addToCart}/>
                         ))
                     }
                 </div>
